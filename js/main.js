@@ -103,6 +103,21 @@
 	
 	};
 
+	var goToSection = function() {
+
+		$('.arrow').on('click', function(event){
+
+			event.preventDefault();
+
+			$('html, body').animate({
+         scrollTop: $("#fh5co-about").offset().top
+      }, 500,'easeInOutExpo');
+
+			return false;
+		});
+	
+	};
+
 	var pieChart = function() {
 		$('.chart').easyPieChart({
 			scaleColor: false,
@@ -138,6 +153,7 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
+		goToSection();
 		loaderPage();
 		fullHeight();
 		parallax();
