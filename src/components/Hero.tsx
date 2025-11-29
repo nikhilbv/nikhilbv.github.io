@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github, Download } from "lucide-react";
+import profilePic from "@/assets/profile.png";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -101,11 +102,12 @@ export function Hero() {
           >
             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl"></div>
-              <div className="relative w-full h-full rounded-full bg-muted/50 border-4 border-accent/20 overflow-hidden flex items-center justify-center">
-                <div className="text-center text-muted-foreground p-8">
-                  <p className="text-sm">Profile Photo Placeholder</p>
-                  <p className="text-xs mt-2">Upload your photo here</p>
-                </div>
+              <div className="relative w-full h-full rounded-full border-4 border-accent/20 overflow-hidden">
+                <img
+                  src={profilePic}
+                  alt="Nikhil B V"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
