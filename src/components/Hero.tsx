@@ -101,8 +101,8 @@ export function Hero() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl"></div>
-              <div className="relative w-full h-full rounded-full border-4 border-accent/20 overflow-hidden">
+              <div className="absolute inset-0 bg-accent/10 rounded-2xl blur-3xl"></div>
+              <div className="relative w-full h-full rounded-2xl border-4 border-accent/20 overflow-hidden">
                 <img
                   src={profilePic}
                   alt="Nikhil B V"
