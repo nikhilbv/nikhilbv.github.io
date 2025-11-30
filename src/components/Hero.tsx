@@ -98,15 +98,14 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center items-center"
           >
             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 bg-accent/10 rounded-full blur-3xl"></div>
-              <div className="relative w-full h-full rounded-full border-4 border-accent/20 overflow-hidden">
+              <div className="absolute inset-0 bg-accent/10 rounded-none blur-3xl"></div>
+              <div style={{ borderRadius: "49%" }} className="relative w-full h-full rounded-none border-4 border-accent/20 overflow-hidden">
                 <img
                   src={profilePic}
                   alt="Nikhil B V"
-                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
