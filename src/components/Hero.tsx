@@ -51,9 +51,11 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-wrap gap-4"
             >
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Download className="mr-2 h-5 w-5" />
-                Download Résumé
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                <a href="https://drive.google.com/uc?export=download&id=1XTSJAWjGTzy7yw4WizGCHBYunvA6kRWw" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Résumé
+                </a>
               </Button>
               <Button size="lg" variant="outline" onClick={scrollToContact}>
                 Contact Me
