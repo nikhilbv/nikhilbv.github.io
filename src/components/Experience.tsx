@@ -9,14 +9,13 @@ export function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const achievements = [
-    "Led the design and deployment of real-time computer vision systems on edge and cloud platforms, improving model accuracy, reducing latency, and cutting infrastructure costs across multiple products.",
-    "Built on-device driver monitoring solutions on edge SoCs, significantly reducing unsafe-driver events through optimized inference and calibrated alert logic.",
-    "Designed and deployed face authentication systems using deep metric learning and API-based microservices, delivering sub-second 1:N matching in production.",
-    "Developed internal geospatial AI tooling using Python and C++ (with UI), integrating annotation, training, and inference into a single workflow and boosting labeling throughput by around 60%.",
-    "Automated 3D building reconstruction pipelines from elevation data and imagery, reducing manual modeling effort by around 65% and enabling scalable 3D map production.",
-    "Designed and optimized multi-model perception pipelines for HD mapping, improving visual accuracy and increasing inference speed for large-scale road and lane understanding.",
-    "Built and maintained an internal ML serving and MLOps platform ('AIML Hub') to handle model registry, automated deployment, scheduling, and monitoring; reduced deployment time and downtime while increasing system uptime and reliability.",
-    "Mentored engineers on profiling, quantization, GPU/memory optimization, and API design, improving reliability and delivery velocity across the ML team.",
+    "Built an on-device Driver Monitoring System on SG2000 SoC using YOLOv5 + MediaPipe FaceMesh, achieving 84.18% mAP@0.5 IoU and reducing unsafe-driver events by 40% through optimized inference and alert logic.",
+    "Architected a cross-modal (IR - RGB) face authentication system using ArcFace embeddings and FastAPI microservices, enabling sub-second 1:N matching under diverse lighting and pose conditions.",
+    "Developed a Python-C++/Qt geospatial AI tool (via pybind11), integrating annotation, training, and inference; improved labeling throughput by 60% with real-time ML-assisted workflows.",
+    "Automated LoD-2 3D building reconstruction (Mask R-CNN + plane fitting + OBJ texturing) from DSM/DTM and orthophotos, reducing manual modeling by 65% and scaling 3D map production.",
+    "Designed and productionized multi-model perception pipelines (YOLO, Mask R-CNN, LaneNet) for HD mapping, boosting visual accuracy by +25% and enabling scalable extraction of lanes, drivable area, and road assets across multi-camera survey vehicles.",
+    "Built and maintained the AIML Hub, MapmyIndia’s ML serving and MLOps platform, automating deployment pipelines, model registry, scheduling, and monitoring; fixed GPU memory leak via weight freezing, improving deployment time (-25%), downtime (-30%), and reliability (95% uptime).",
+    "Mentored engineers on profiling, quantization, and GPU memory optimization, improving reliability and delivery velocity across the ML team.",
   ];
 
   return (
